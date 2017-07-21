@@ -1,2 +1,2 @@
-# This is a template project front-site site
+# This is a template project front-end site
 For quick start
