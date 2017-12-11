@@ -1,11 +1,6 @@
 // jquery
-//= ../../bower_components/jquery/dist/jquery.min.js
+//= ../../node_modules/jquery/dist/jquery.min.js
 
-// tether.io привязываем друг к другу абсолютно позиционированные элементы
-//= ../../bower_components/tether/dist/js/tether.min.js
+// bootstrap Bootstrap v4.0.0-beta.2
+//= ../../node_modules/bootstrap/dist/js/bootstrap.js
 
-// bootstrap 4.0.0-alpha.6 flexbox
-//= ../../bower_components/bootstrap/dist/js/bootstrap.min.js
-
-//= ../../bower_components/fancybox/dist/jquery.fancybox.js
-//= ../../bower_components/slick-carousel/slick/slick.min.js

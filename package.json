@@ -1,9 +1,10 @@
 {
-  "name": "project-template",
+  "name": "teleport",
   "version": "0.0.1",
-  "description": "",
+  "description": "для быстрого старта",
   "author": "Vladimir Glushkov <xhtmlblog@gmail.com>",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "browser-sync": "^2.2.3",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
@@ -18,10 +19,27 @@
     "gulp-zip": "^3.0.2",
     "imagemin-pngquant": "^4.0.0",
     "inputmask": "^3.3.7",
+    "jquery": "^3.2.1",
     "node-sass": "^3.7.0",
+    "popper.js": "^1.12.9",
     "rimraf": "^2.3.1"
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "fancybox": "^3.0.0",
     "gulp": "^3.9.1"
-  }
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenrirheimr/teleport.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenrirheimr/teleport/issues"
+  },
+  "homepage": "https://github.com/fenrirheimr/teleport#readme"
 }

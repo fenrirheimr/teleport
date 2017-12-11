@@ -1,6 +1,7 @@
 {
-  "name": "project-template",
+  "name": "teleport",
   "version": "0.0.1",
+  "https-proxy" : "89.236.17.106:3128",
   "authors": [
     "Vladimir Glushkov <xhtmlblog@gmail.com>"
   ],
@@ -12,7 +13,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "animatewithsass": "^3.2.2",
-    "bootstrap": "v4.0.0-al pha.6",
+    "bootstrap": "4.0",
     "slick-carousel": "^1.6.0",
     "fancybox": "^3.1.20"
   },
