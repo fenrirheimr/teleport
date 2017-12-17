@@ -1,5 +1,4 @@
 
-
 html, body {
   position: relative;
   min-height: 100%;
@@ -35,3 +34,42 @@ html, body {
 }
 
 //usage: @include linearGradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+
+.header {
+  //background: #53a0cf;
+  height: 132px;
+
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 35%, #ffffff 35%, #53a0cf 35%, #53a0cf 35%, #53a0cf 100%);
+  background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 35%,#ffffff 35%,#53a0cf 35%,#53a0cf 35%,#53a0cf 100%);
+  background: linear-gradient(to right, #ffffff 0%,#ffffff 35%,#ffffff 35%,#53a0cf 35%,#53a0cf 35%,#53a0cf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#53a0cf',GradientType=1 );
+
+  .logo {
+    height: 132px;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    .sub {
+      color: #969696;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.promo-slider {
+  height: 512px;
+}
+
+.block-wrapper {
+  margin-top: 60px;
+  .block-title {
+    font-family: 'source_sans_prosemibold', sans-serif;
+    font-size: 29px;
+    color: #333;
+  }
+  .block-content {}
+  .block-more {}
+}

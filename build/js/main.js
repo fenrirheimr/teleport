@@ -1,6 +1,6 @@
 
 (function($) {
-    "use strict";
+    console.log('test')
 
     // animation show elements ---------------------------------------------------------------------------------------
 
@@ -15,28 +15,50 @@
 
     //usage $( '.class-name' ).animateCss('slideInDown');
 
-
-    // smooth page scroll ----------------------------------------------------------------------------------------------
-
-    $.event.props.push("wheelDelta");
-    $.easing.easeOutQuint = function (x, t, b, c, d) {
-        return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
-    };
-
-    var docH = $(document).height() - $(window).height(),
-        scrollTop = $(window).scrollTop();
-
-    $(document).on("DOMMouseScroll mousewheel", function (e, delta) {
-
-        // clamp the scroll offset
-        scrollTop = Math.min(docH, Math.max(0, scrollTop - (delta || e.wheelDelta)));
-
-        $("body, html").stop().animate({
-            scrollTop: scrollTop
-        }, 1000, "easeOutQuint");
-
-        e.preventDefault();
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
     });
 
+    // ymaps.ready(init);
+    // var myMap,
+    //     myPlacemark;
+    //
+    // function init(){
+    //     myMap = new ymaps.Map("map", {
+    //         center: [55.73680706898759,37.69215049999999],
+    //         zoom: 16
+    //     });
+    //
+    //     myPlacemark = new ymaps.Placemark([55.73680706898759,37.69215049999999], {
+    //         hintContent: 'Москва!',
+    //         balloonContent: 'Столица России'
+    //     });
+    //
+    //     myMap.geoObjects.add(myPlacemark);
+    // }
+
+    function initMap() {
+        var uluru = {lat: 37.69215049999999, lng: 55.73680706898759};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
 
 })(jQuery);

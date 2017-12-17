@@ -1,6 +1,3 @@
-// jquery
-//= ../../node_modules/jquery/dist/jquery.min.js
+//= ../../node_modules/slick-carousel/slick/slick.js
 
-// bootstrap Bootstrap v4.0.0-beta.2
-//= ../../node_modules/bootstrap/dist/js/bootstrap.js
 

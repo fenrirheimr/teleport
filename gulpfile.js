@@ -28,28 +28,28 @@ var path = {
         html: 'dist/',
         js: 'dist/js/',
         css: 'dist/css/',
-        img: 'dist/img/',
+        img: 'dist/pic/',
         fonts: 'dist/fonts/'
     },
     build: {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
-        img: 'build/img/',
+        img: 'build/pic/',
         fonts: 'build/fonts/'
     },
     src: {
         haml: 'src/*.html',
         js: 'src/js/**/*.js',
         style: 'src/css/*.scss',
-        img: 'src/img/**/*.*',
+        img: 'src/pic/**/*.*',
         fonts: 'build/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.scss',
-        img: 'src/img/**/*.*',
+        img: 'src/pic/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: {
@@ -64,7 +64,7 @@ var config = {
     },
     host: 'localhost',
     port: 9000,
-    logPrefix: "Symphony"
+    logPrefix: "teleport"
 };
 
 gulp.task('html:build', function () {
