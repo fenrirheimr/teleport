@@ -42,3 +42,13 @@ blockquote {
     content:'';
   }
 }
+a {
+  color: $link-color-base;
+}
+
+p {
+  font-size: 15px;
+  color: #333;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
