@@ -44,6 +44,10 @@ blockquote {
 }
 a {
   color: $link-color-base;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
 }
 
 p {

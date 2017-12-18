@@ -19,7 +19,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         asNavFor: '.slider-nav',
     });
     $('.slider-nav').slick({
